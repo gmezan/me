@@ -11,17 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
-      with:
-        node-version: 'latest'
-    - run: npm install
-    # TODO: add some tests maybe
-    - run: npm run build
+    - name: Build
+      uses: actions/jekyll-build-pages@v1
     - name: Upload static files as artifact
       id: deployment
       uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
       with:
-        path: dist/
+        path: ./_site
   # Deployment job
   deploy:
     environment:
