@@ -2,6 +2,7 @@ import aco from '../assets/images/aco.png';
 import dpd from '../assets/images/dpd.png';
 import levelfy from '../assets/images/levelfy.png';
 import snake from '../assets/images/snake.png';
+import rag from '../assets/images/rag.png'
 
 import '../assets/styles/Project.scss';
 
@@ -10,6 +11,11 @@ function Project() {
     <div className="projects-container" id="projects">
         <h1>Personal Projects</h1>
         <div className="projects-grid">
+             <div className="project">
+                <a href="https://github.com/gmezan/azure-openai-search-rag" target="_blank" rel="noreferrer"><img src={rag} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/gmezan/azure-openai-search-rag" target="_blank" rel="noreferrer"><h2>Chat with your Data app</h2></a>
+                <p>AI powered RAG application using Azure OpenAI and AI Search. The agent answers questions related to azure certifications exams. Developed and deployed the infra, backend and frontend.</p>
+            </div>
             <div className="project">
                 <a href="https://github.com/gmezan/levelfy-frontend" target="_blank" rel="noreferrer"><img src={levelfy} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://github.com/gmezan/levelfy-frontend" target="_blank" rel="noreferrer"><h2>Levelfy</h2></a>
