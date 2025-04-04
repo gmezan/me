@@ -16,7 +16,7 @@ const labelsFirst = [
     "Python",
     "SQL",
     "NoSQL",
-    "Postman"
+    "Angular"
 ];
 
 const labelsSecond = [
