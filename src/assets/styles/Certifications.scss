@@ -3,14 +3,46 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-
+  
     svg {
-        color: white;
+      color: white;
     }
-}
-
-.certs-container .certs-grid {
+  }
+  
+  .certs-container .certs-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 50px;
-}
+    // Use auto-fit + minmax for dynamic columns
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-gap: 5%;
+    // Smooth transitions for layout changes
+    transition: 0.3s ease-in-out;
+  }
+  
+  .certs-container .certs-grid .cert {
+    padding-bottom: 5%;
+    // Prevent grid items from stretching
+    align-self: start;
+  
+    &:hover img {
+      transform: scale(1.1); // Optional hover effect
+    }
+  }
+
+  @media (max-width: 1080px) {
+    .certs-container .certs-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+
+  @media (max-width: 768px) {
+    .certs-container .certs-grid {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .certs-container .certs-grid {
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+  }
