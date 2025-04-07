@@ -5,10 +5,18 @@ import snake from '../assets/images/snake.png';
 import rag from '../assets/images/rag.png'
 import infra from '../assets/images/infra.png'
 import sd from '../assets/images/spring_devops.png'
+import ds from '../assets/images/deepseek.png'
 
 import '../assets/styles/Project.scss';
 
 const projects = [
+    {
+        href: "https://github.com/gmezan/ai-agent-langchain",
+        title: "WIP: Agents with LangChain and DeepSeek",
+        content: "Currently working on a multi agent architecture using LangChain powered by DeepSeek. Will provide a front end to interact and will be hosted on the cloud.",
+        imgSrc: ds,
+        alt: "Agents"
+    },
     {
         href: "https://github.com/gmezan/azure-openai-search-rag",
         title: "Chat with your Data app",
