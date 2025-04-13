@@ -41,14 +41,14 @@ const projects = [
     {
         href: "https://github.com/gmezan/levelfy-frontend",
         title: "Levelfy",
-        content: "Led the development of front and back-end for a web platform offering workshops created by and tailored to students. Developed with Angular and Java. Deployed infra, configured services, and managed operations using AWS.",
+        content: "During my studies, led the development of front and back-end for a web platform offering workshops created by and tailored to students. Developed with Angular and Java. Deployed infra, configured services, and managed operations using AWS.",
         imgSrc: levelfy,
         alt: "Levelfy platform screenshot"
     },
     {
         href: "https://github.com/gmezan/ant-colony-implementation-for-tsp",
         title: "Ant Colony Optimization for TSP",
-        content: "Multiple Ant Colony algorithm implementations to efficiently solve the traveling salesman problem (TSP).",
+        content: "Ant Colony algorithm implementation to efficiently solve the traveling salesman problem (TSP). Extended the algorithm to solve the multidimensional knapsack problem and applied it to the virtual machine placement (VMP) problem.",
         imgSrc: aco,
         alt: "Algorithm visualization"
     },
