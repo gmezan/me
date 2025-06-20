@@ -52,3 +52,19 @@ export default tseslint.config({
   },
 })
 ```
+
+# Getting Started
+
+## Prerequisites
+- Node.js >= 18.0.0
+
+# Installation
+
+```bash
+# Install dependencies using npm
+npm install
+
+# Run vite project
+npm run dev
+
+```
