@@ -12,8 +12,8 @@ import '../assets/styles/Project.scss';
 const projects = [
     {
         href: "https://github.com/gmezan/ai-agent-langchain",
-        title: "WIP: Agents with LangChain and DeepSeek",
-        content: "Currently working on a multi agent architecture using LangChain powered by DeepSeek. Will provide a front end to interact and will be hosted on the cloud.",
+        title: "AI Agent with LangChain & DeepSeek",
+        content: "Advanced AI agent system using LangChain and DeepSeek LLM. Features tool calls for real data, FastAPI REST API, CLI client, and a modern React chat frontend.",
         imgSrc: ds,
         alt: "Agents"
     },
